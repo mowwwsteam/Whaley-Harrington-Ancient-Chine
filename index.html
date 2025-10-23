@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Themed Website</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffe6f0;
+      color: #333;
+    }
+
+    /* Header and Navigation */
+    header {
+      background-color: #ff99cc;
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: white;
+      margin-left: 20px;
+    }
+
+    nav {
+      flex: 1;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .search-bar {
+      margin-right: 20px;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    /* Main content */
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #cc0066;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .image-gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff99cc;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">PinkSite</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Gallery</a>
+      <a href="#">Services</a>
+      <a href="#">Blog</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+    </div>
+  </header>
+
+  <main>
+    <h1>Welcome to Our Pink Themed Website!</h1>
+    <p>Explore the beauty of simplicity and elegance in pink.</p>
+
+    <div class="image-gallery">
+      <img src="https://source.unsplash.com/600x400/?pink,flowers" alt="Pink 1" />
+      <img src="https://source.unsplash.com/600x400/?pink,art" alt="Pink 2" />
+      <img src="https://source.unsplash.com/600x400/?pink,design" alt="Pink 3" />
+      <img src="https://source.unsplash.com/600x400/?pink,style" alt="Pink 4" />
+      <img src="https://source.unsplash.com/600x400/?pink,abstract" alt="Pink 5" />
+      <img src="https://source.unsplash.com/600x400/?pink,nature" alt="Pink 6" />
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PinkSite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
 
