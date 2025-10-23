@@ -1,138 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pink Themed Website</title>
-  <style>
-    /* General Styles */
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffe6f0;
-      color: #333;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PinkSite | All in One</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe6f0;
+    color: #333;
+    scroll-behavior: smooth;
+  }
 
-    /* Header and Navigation */
-    header {
-      background-color: #ff99cc;
-      padding: 15px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+  header {
+    background-color: #ff99cc;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
 
-    .logo {
-      font-size: 1.8em;
-      font-weight: bold;
-      color: white;
-      margin-left: 20px;
-    }
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+  }
 
-    nav {
-      flex: 1;
-      text-align: center;
-    }
+  nav {
+    flex: 1;
+    text-align: center;
+  }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+  nav a:hover {
+    text-decoration: underline;
+  }
 
-    .search-bar {
-      margin-right: 20px;
-    }
+  .search-bar {
+    margin-right: 20px;
+  }
 
-    .search-bar input[type="text"] {
-      padding: 6px 10px;
-      border: none;
-      border-radius: 5px;
-      outline: none;
-    }
+  .search-bar input[type="text"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
 
-    /* Main content */
-    main {
-      padding: 40px;
-      text-align: center;
-    }
+  section {
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ffb6d9;
+  }
 
-    h1 {
-      color: #cc0066;
-    }
+  h1 {
+    color: #cc0066;
+    font-size: 2em;
+  }
 
-    .image-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
-    }
+  .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+  }
 
-    .image-gallery img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: transform 0.3s;
-    }
+  .image-box {
+    max-width: 450px;
+    text-align: center;
+  }
 
-    .image-gallery img:hover {
-      transform: scale(1.05);
-    }
+  .image-box img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+  }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #ff99cc;
-      color: white;
-      margin-top: 50px;
-    }
-  </style>
+  .image-box img:hover {
+    transform: scale(1.03);
+  }
+
+  .image-box p {
+    margin-top: 15px;
+    background-color: #ffccdd;
+    padding: 15px;
+    border-radius: 8px;
+    color: #660033;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff99cc;
+    color: white;
+  }
+</style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">PinkSite</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Gallery</a>
-      <a href="#">Services</a>
-      <a href="#">Blog</a>
-      <a href="#">Shop</a>
-      <a href="#">Contact</a>
-    </nav>
-    <div class="search-bar">
-      <input type="text" placeholder="Search..." />
+<header>
+  <div class="logo">PinkSite</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#services">Services</a>
+    <a href="#blog">Blog</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." />
+  </div>
+</header>
+
+<!-- HOME -->
+<section id="home">
+  <h1>Welcome to Our Pink Themed Website!</h1>
+  <p>Experience beauty, simplicity, and elegance in every shade of pink.</p>
+  <div class="image-section">
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,flowers" alt="Pink Flower">
+      <p>Pink blossoms that inspire creativity and calmness.</p>
     </div>
-  </header>
-
-  <main>
-    <h1>Welcome to Our Pink Themed Website!</h1>
-    <p>Explore the beauty of simplicity and elegance in pink.</p>
-
-    <div class="image-gallery">
-      <img src="https://source.unsplash.com/600x400/?pink,flowers" alt="Pink 1" />
-      <img src="https://source.unsplash.com/600x400/?pink,art" alt="Pink 2" />
-      <img src="https://source.unsplash.com/600x400/?pink,design" alt="Pink 3" />
-      <img src="https://source.unsplash.com/600x400/?pink,style" alt="Pink 4" />
-      <img src="https://source.unsplash.com/600x400/?pink,abstract" alt="Pink 5" />
-      <img src="https://source.unsplash.com/600x400/?pink,nature" alt="Pink 6" />
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,art" alt="Pink Art">
+      <p>Soft art and modern design meet the charm of pink.</p>
     </div>
-  </main>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 PinkSite. All rights reserved.</p>
-  </footer>
+<!-- ABOUT -->
+<section id="about">
+  <h1>About Us</h1>
+  <p>We believe everything looks better in pink.</p>
+  <div class="image-section">
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,team" alt="Team">
+      <p>Our creative team works together to bring you inspiring visuals.</p>
+    </div>
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,workspace" alt="Workspace">
+      <p>Where creativity and passion for design come to life.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h1>Gallery</h1>
+  <p>Explore our favorite pink moments and creations.</p>
+  <div class="image-section">
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,interior" alt="Interior">
+      <p>Elegant pink interior design with a modern twist.</p>
+    </div>
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,fashion" alt="Fashion">
+      <p>Fashion that celebrates confidence and softness.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h1>Our Services</h1>
+  <p>Design, creativity, and everything pink.</p>
+  <div class="image-section">
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,design" alt="Design">
+      <p>Custom pink-themed branding for your business.</p>
+    </div>
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,consulting" alt="Consulting">
+      <p>Creative consulting to make your ideas bloom.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <h1>Our Blog</h1>
+  <p>Thoughts, updates, and inspiration in every hue of pink.</p>
+  <div class="image-section">
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,lifestyle" alt="Lifestyle">
+      <p>How pink design trends are changing modern aesthetics.</p>
+    </div>
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,ideas" alt="Ideas">
+      <p>Creative ideas that spark joy and imagination.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop">
+  <h1>Shop</h1>
+  <p>Discover our curated collection of pink-inspired items.</p>
+  <div class="image-section">
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,product" alt="Product 1">
+      <p>Beautiful pink accessories to brighten your day.</p>
+    </div>
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,decor" alt="Product 2">
+      <p>Home décor that radiates warmth and elegance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h1>Contact Us</h1>
+  <p>We’d love to hear from you! Reach out anytime.</p>
+  <div class="image-section">
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,phone" alt="Phone">
+      <p>Call or email us for more info about our work.</p>
+    </div>
+    <div class="image-box">
+      <img src="https://source.unsplash.com/900x600/?pink,message" alt="Message">
+      <p>Connect with us and share your pink ideas!</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 PinkSite. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
-
